@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700|Raleway:300,400,500,700')
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script')
+@import 'mixins'
+@import 'vars'
+@import 'header'
+
+body
+    color: #333
+    font-family: 'Raleway', sans-serif
+    font-weight: 400
+    margin: 0
+    padding: 0
+
+h1, h2, h3, h4, h5
+    margin: 1.414em 0 0.5em
+    line-height: 1.2
+    font-family: 'Lora', serif
+    font-weight: 400
+    margin-top: 0
+
+h1
+    margin: 0
+    font-size: 3.998em
+
+h2
+    font-size: 2.827em
+
+h3
+    font-size: 1.999em
+
+h4
+    font-size: 1.414em
+
+ul
+    list-style-type: none
+
+a
+    text-decoration: none
+
+.about
+    max-width: 960px
+    margin: 0 auto
+    padding: 100px 10px
+    text-align: right
+    &__wrapper
+        display: flex
+        margin-top: 40px
+    &__description
+        text-align: left
+        width: 68%
+        margin-right: 20px
+    &__description-items
+        margin-bottom: 20px
+    &__description-items::before
+        display: inline-block
+        vertical-align: middle
+        font-style: normal
+        content: url("../img/checked.png")
+        margin-right: 2px
+    &__stats
+        text-align: center
+        width: 30%
+        border: 3px solid $primary
+        padding: 40px 30px 70px 30px
+    &__stats-number
+        font-size: 80px
+        padding-bottom: 20px
+        background: linear-gradient(45deg, #102b6a 33%, $primary)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+
+.directions
+    background-color: $primary
+    color: #fff
+    padding: 100px 10px
+    &__container
+        max-width: 960px
+        margin: 0 auto
+    &__wrapper
+        display: flex
+        flex-wrap: wrap
+    &__items
+        width: 31%
+        border: 3px solid #fff
+        margin: 60px 10px 0 0
+        text-align: center
+    &__items:last-child
+        margin-right: 0
+    &__items-img
+        position: relative
+        top: -40px
+    &__items-text
+        position: relative
+        top: -30px
+        font-weight: 700
+        font-size: 18px
+        text-transform: uppercase
+
+.partners
+    max-width: 960px
+    margin: 0 auto
+    padding: 100px 10px
+    text-align: right
+    &__content
+        text-align: center
+
+.tested
+    padding: 100px 10px
+    background-color: #eee
+    &__container
+        max-width: 960px
+        margin: 0 auto
+    &__wrapper
+        display: flex
+        flex-wrap: wrap
+    &__items
+        width: 48%
+        border: 3px solid #fff
+        margin: 60px 10px 0 0
+        text-align: center
+    &__items:last-child
+        margin-right: 0
+    &__img
+        position: relative
+        top: -40px
+        border-radius: 50%
+        border: 3px solid #fff
+    &__name
+        font-weight: 700
+        text-transform: uppercase
+    &__text
+        padding: 10px 20px 30px 20px
+        text-align: center
+
+
+footer
+    color: #fff
+    background-color: #333
+
+.footer
+    +container
+    &__content
+        font-weight: 300
+        padding: 30px 0
